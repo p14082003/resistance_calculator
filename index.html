@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resistor Colour Decoder</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>Resistor Colour Decoder</h1>
+    <table id="chooser">
+        <tr>
+            <td><input type="button" class="black" onclick="colourChosen(this)"></td>
+            <td><input type="button" class="brown" onclick="colourChosen(this)"></td>
+            <td><input type="button" class="red" onclick="colourChosen(this)"></td>
+            <td><input type="button" class="orange" onclick="colourChosen(this)"></td>
+            <td><input type="button" class="yellow" onclick="colourChosen(this)"></td>
+            <td><input type="button" class="green" onclick="colourChosen(this)"></td>
+            <td><input type="button" class="blue" onclick="colourChosen(this)"></td>
+            <td><input type="button" class="violet" onclick="colourChosen(this)"></td>
+            <td><input type="button" class="grey" onclick="colourChosen(this)"></td>
+            <td><input type="button" class="white" onclick="colourChosen(this)"></td>
+            <td><input type="button" class="gold" onclick="colourChosen(this)"></td>
+            <td><input type="button" class="silver" onclick="colourChosen(this)"></td>
+        </tr>
+    </table>
+
+    <input class="input" type="button" onclick="reset()" value="Reset">
+    <input class="input" type="text" readonly id="output">
+    <input class="input" type="button" onclick="calculate()" value="Calculate"><br>
+    <input class="input" id="remove" type="button" onclick="remove()" value="Remove">
+
+    <table style="border-spacing: 2.2em; height: 60px">
+        <tr id="display">
+        </tr>
+    </table>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
